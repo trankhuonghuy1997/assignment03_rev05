@@ -1,0 +1,91 @@
+@media(max-width: 992px) {
+    /* display on tablet */
+    .profile-img {
+        display: none;
+    }
+    #banner {
+        height: 50vh;
+    }
+
+    #about .container {
+        grid-template-columns: 1fr;
+    }
+    #job-info .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        row-gap: 20px;        
+        grid-template-areas: 
+        "ex ac"
+        "ex edu"
+        "sk edu"
+        "lan ho";
+    }
+    .experience {
+        grid-area: ex;
+    }
+    .education {
+        grid-area: edu;
+    }
+    .activity {
+        grid-area: ac;
+    }
+    .hobbby {
+        grid-area: ho;
+    }
+    .languge {
+        grid-area: lan;
+    }
+    .skill {
+        grid-area: sk;
+    }
+
+    .certificate-list,
+    .project-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .personal-cv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "goal"
+            "scope"
+            "team"
+            "timeline"
+            "primary";
+        padding: 20px;
+        gap: 20px;
+    }
+    .personal-cv ul {
+        list-style-type: none;
+    }
+    
+    .goals {
+        grid-area: goal;
+    }
+    .scope {
+        grid-area: scope;
+    }
+    .team {
+        grid-area: team;
+    }
+    .primary {
+        grid-area: primary;
+    }
+    .timeline {
+        grid-area: timeline;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+    
+    .member {
+        align-self: flex-start;
+     }
+
+    .timeline-content {
+       align-self: flex-start;
+       width: 100%;
+    }
+ }

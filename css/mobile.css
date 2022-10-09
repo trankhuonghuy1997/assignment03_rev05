@@ -1,0 +1,110 @@
+@media(max-width: 768px) {
+   #about .container,
+   #job-info .container,
+   .certificate-list,
+   .project-items {
+        grid-template-columns: 1fr !important;
+   }
+
+   #job-info .container{
+        width: 100%;
+        margin: 0 auto;
+   }
+
+   #nav-bar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding: 0;
+   }
+   .nav-bar-left, .nav-bar-right {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .nav-bar-item {
+    padding: 10px 10px 0 10px;
+    text-align: left;
+    border: none;
+   }
+
+   #job-info .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "ex"
+    "edu"
+    "ac"
+    "sk"
+    "lan"
+    "ho"
+}
+    .experience {
+        grid-area: ex;
+    }
+    .education {
+        grid-area: edu;
+    }
+    .activity {
+        grid-area: ac;
+    }
+    .hobbby {
+        grid-area: ho;
+    }
+    .languge {
+        grid-area: lan;
+    }
+    .skill {
+        grid-area: sk;
+    }
+    
+    .certificate-item {
+        grid-template-columns: 1fr;
+    }
+    .certificate-img {
+        width: 100%;
+    }
+
+
+
+
+    .personal-cv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "goal"
+            "scope"
+            "team"
+            "timeline"
+            "primary";
+        padding: 30px;
+        gap: 20px;
+    }
+    .personal-cv ul {
+        list-style-type: none;
+    }
+    
+    .goals {
+        grid-area: goal;
+    }
+    .scope {
+        grid-area: scope;
+    }
+    .team {
+        grid-area: team;
+    }
+    .primary {
+        grid-area: primary;
+    }
+    .timeline {
+        grid-area: timeline;
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+    .team .d-flex,
+    .timeline li {
+       align-items: flex-start !important;
+    }
+}
